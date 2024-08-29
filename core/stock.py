@@ -8,7 +8,7 @@ class CurrentStock:
             "Authorization": f"Bearer {token}"
         }
 
-    def get_stock(self, status="QUANTITY"):
+    def get_stock(self, status: str):
         query = {
             "status": status
         }
