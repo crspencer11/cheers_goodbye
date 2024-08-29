@@ -3,7 +3,6 @@ from auth import Authenticator
 from orders import Orders
 
 def main():
-    # Create instances of ClassA and ClassB
     auth_actor = Authenticator(client_id=os.getenv("CLIENT_ID"),
                                client_id=os.getenv("CLIENT_SECRET"),
                                client_id=os.getenv("ACCESS_TYPE"))
@@ -17,7 +16,6 @@ def main():
                              page=0,
                              page_size=0,
                              start_date="2024-08-20T14:13:12.000+0400")
-
 
 if __name__ == "__main__":
     main()
